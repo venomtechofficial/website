@@ -1,0 +1,327 @@
+@media screen and (max-width: 319px) {
+  .hero-title {
+    font-size: 2.6rem !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .back-to-top {
+    right: 40px !important;
+    bottom: 150px !important;
+  }
+  .back-to-top svg {
+    width: 37px !important;
+    height: 37px !important;
+  }
+}
+
+@media screen and (max-width: 387px) {
+  .hero-buttons {
+    margin-bottom: 3rem !important;
+  }
+}
+@media screen and (max-width: 398px) {
+    .hero-title {
+        margin: 7rem 1rem .5rem 1rem;
+        text-align: center;
+    }
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
+/* @media screen and (max-width: 390px) {
+  .mission {
+    left: -.5rem;
+  }
+} */
+
+/* largest phones */
+@media screen and (max-width: 480px) {
+    .hero-title {
+      letter-spacing: .05rem;
+    }
+    .hero-p {
+        max-width: 80%;
+    }
+    .social-icons {
+        width: 75%;
+    }
+    .hero-buttons {
+      margin-bottom: 5rem;
+    }
+}
+/* -------------- */
+
+/* --------------------- */
+/* SWITCH TO MOBILE VIEW */
+/* --------------------- */
+@media screen and (max-width: 768px) {
+    body {
+        background: rgb(23, 22, 22) !important;
+    }
+    .nav-ul-top {
+        display: none;
+    } 
+    .nav-ul {
+      display: none;
+    }
+    .hamburger {
+        display: block;
+        z-index: 10000;
+        position: absolute;
+        left: 50%;
+        margin-left: -26.5px;
+        top: 3rem;
+    }
+    .hero-gray {
+      margin-top: -1rem;
+    }
+    .hero-title {
+        margin: 9rem auto 0 auto;
+    }
+    .hero-p {
+        color: #df7171;
+        margin-bottom: 1rem;
+        line-height: 1.8;
+    }
+    .p-section {
+      max-width: 100% !important;
+    }
+    .p-section:nth-child(1) {
+      margin-top: 2rem;
+    }
+    .hero-btn {
+        box-shadow: 0px 4px 4px rgba(95, 88, 88, 0.4);
+    }
+    .mobile-heart {
+        display: block;
+        margin: 1rem .5rem;
+    }
+    .cat-link {
+        display: block;
+      }
+    @keyframes Pulse {
+        50% {
+          transform: scale(1.2);
+        }
+      }
+    
+      .mobile-heart {
+        transform: scale(1);
+        animation: Pulse 1.5s infinite ease-in-out;
+      }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0;
+        opacity: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background-color: rgb(0, 0, 0);
+        padding-top: 5rem;
+        transition: .4s ease-in-out;
+        color: #c55050;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1.7rem;
+    }
+    .mobile-nav.is-active {
+        left: 0;
+        opacity: 1;
+    }
+
+    .mobile-nav li:hover, 
+    .mobile-nav li:focus, 
+    .mobile-nav li:active {
+        color: #df7171;
+    }
+    .mobile-nav li a.is-open {
+        color: #00ffffb3;
+      }
+    /* mobile nav fade in animation START */
+    .mobile-nav.is-active li { 
+        opacity: 0; /* elements fade in from being invisible */
+       }
+       .mobile-nav.is-active li.open {
+        animation-name: fadeIn;
+        animation-fill-mode: forwards;
+        animation-duration: .5s; /* time between start and end of animation */
+        animation-delay: .15s; /* time before animation kicks in */
+        animation-timing-function: ease-in-out;
+       }
+       .mobile-nav.is-active li.open:nth-child(2) {
+        animation-delay: .25s;
+       }
+       .mobile-nav.is-active li.open:nth-child(3) {
+        animation-delay: .4s;
+       }
+       .mobile-nav.is-active li.open:nth-child(4) {
+        animation-delay: .6s;
+       }
+       .mobile-nav.is-active li.open:nth-child(5) {
+        animation-delay: .7s;
+       }
+       @keyframes fadeIn {
+        0% {
+         transform: translateX(75px); /* placement when animation begins */
+         opacity: 0;
+        }
+        100% {
+         transform: translateX(0); /* placement when animation ends */
+         opacity: 1;
+        }
+       }
+       /* mobile nav fade in animation END*/
+
+       .skills-row {
+         width: 100%;
+         flex-wrap: wrap;
+       }
+       
+       footer {
+           margin-top: 1rem;
+       }
+
+       .social-icons {
+         width: 60%;
+       }
+
+       .copyright {
+           margin-bottom: 2rem;
+       }
+       .back-to-top {
+         display: block;
+         position: absolute;
+         bottom: 140px;
+         right: 50px;
+         transform: rotate(270deg);
+       }
+}
+@media screen and (min-width: 768px) {
+  .back-to-top svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+/* --------------------- */
+/* SWITCH TO MOBILE VIEW */
+/* --------------------- */
+
+/* reactivates typewriter animation for desktop */
+@media screen and (max-width: 1023px) {
+  .typewriter-text {
+    animation: none;
+    border-right: transparent;
+    white-space: normal;
+  }
+  .hero-p-title {
+    width: 95%;
+  }
+}
+/* avoids using jump and typewriter animation on the home page at the same time */
+@media screen and (max-width: 1022px) {
+  .period {
+    animation: Jump 1.5s ease-in-out 5;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .github-text {
+        opacity: 1;
+        transition: 0s ease-in-out;
+      }
+      .hero-btn:hover .github-text, 
+      .hero-btn:focus-within .github-text,
+      .hero-btn:active .github-text {
+        opacity: 1;
+      }
+      .github-container {
+        /* shares same height, width and line height as text */
+        display: none;
+        position: absolute;
+        top: 0%;
+        height: 3.5rem;
+        width: 10rem;
+        line-height: 3.5rem;
+      }
+      .github-icon {
+        display: none;
+        position: absolute;
+        top: .3rem;
+        left: 3.7rem;
+        width: 45px;
+        opacity: 0;
+        transition: 0s ease-in-out;
+        transform: translateX(150px);
+      }
+      .hero-btn:hover .github-icon, 
+      .hero-btn:focus-within .github-icon,
+      .hero-btn:active .github-icon {
+        opacity: 0;
+        transform: translate(0px);
+      }
+
+      .resume-text {
+        opacity: 1;
+        transition: 0s ease-in-out;
+      }
+      .hero-btn:hover .resume-text, 
+      .hero-btn:focus-within .resume-text,
+      .hero-btn:active .resume-text {
+        opacity: 1;
+      }
+      .resume-icon-container {
+        /* shares same height, width and line height as text */
+        display: none;
+        position: absolute;
+        top: 0%;
+        height: 3.5rem;
+        width: 10rem;
+        line-height: 3.5rem;
+      }
+      .resume-icon {
+        display: none;
+        position: absolute;
+        top: .3rem;
+        left: 3.7rem;
+        width: 45px;
+        opacity: 0;
+        transition: 0s ease-in-out;
+        transform: translateX(150px);
+      }
+      .hero-btn:hover .resume-icon, 
+      .hero-btn:focus-within .resume-icon,
+      .hero-btn:active .resume-icon {
+        opacity: 0;
+        transform: translate(0px);
+      }
+}
+
+@media screen and (min-width: 1187px) {
+  .right-arrow {
+    width: 30px;
+    height: 30px;
+    bottom: .7rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .hero-p {
+    font-size: 2em !important;
+  }
+  .hero-p-title {
+    font-size: 3em !important;
+    margin-bottom: 15rem !important;
+  }
+  ul li {
+    font-size: 1.75rem;
+  }
+    .nav-ul li a {
+      font-size: 1.75rem !important;
+  }
+}

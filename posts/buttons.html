@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name='description' content="Learn how to design proper buttons that follow accessibility standards and that keep a common style throughout a website">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="All about Buttons! - Accessibility and Design">
+  <meta property="og:description" content="Learn how to style buttons for both accessibility and a good look throughout the page">
+  <!--favicon link-->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+  <!-- For external style sheets -->
+  <link rel="stylesheet" type="text/css" href="css/buttons.css">
+  <link rel="stylesheet" type="text/css" href="css/hamburger-animation.css">
+  <!--jQuery import link-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- For custom fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+  <!-- Font awesome stuff -->
+  <!-- <link href="fontawesome/css/all.css" rel="stylesheet">
+  <script src="https://use.fontawesome.com/b96c1e7f03.js"></script> -->
+  <title>All about Buttons! - Accessibility and Design</title>
+  <style>
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0%;
+    padding: 0%;
+  }
+  html {
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* full screen background works for all sizes of screens */
+    background: linear-gradient(to right, 
+    rgba(23, 22, 22, .98), 
+    rgba(23, 22, 22, .98)), url(images/stars-min.jpg) no-repeat center center fixed;
+    background-size: cover;
+    /* ------------------- */
+  }
+  body {
+    width: 1920px;
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 100%;
+    /* font-family: 'Open Sans', sans-serif; 300 400 600 */
+    /* font-family: 'Roboto', sans-serif; 300 400 500 700 */
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+    /* background-color: rgb(23, 22, 22); */
+    transition: .1s; /* transition back into light mode */
+    position: relative;
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    color: #00ffffb3;
+  }
+  .main-text a:hover {
+    color: #c55050;
+  }
+  ul li::marker {
+    display: none;
+  }
+  ul, li {
+    list-style: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    color: rgb(168, 168, 168)
+  }
+  
+</style>
+</head>
+
+<body>
+  <div class="page-container">
+
+      <header>
+        <div class="go-back-top" role="button" aria-label="go back to blog page">
+          <a href="../blog.html">
+            <img src="images/left-chevron.svg" class='arrow-left'>
+            Back to Blog page
+          </a>
+        </div>
+        <svg class="home-top" height="50px" viewBox="0 1 511 511.999" width="50px" xmlns="http://www.w3.org/2000/svg" aria-label="Home" role="button">
+          <a href="../index.html" cursor="pointer" pointer-events="all">
+          <path fill="#00ffffb3" d="m498.699219 222.695312c-.015625-.011718-.027344-.027343-.039063-.039062l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.808594-33.328126-13.808594-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.144532.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.441406 13.234375 31.273437 13.746093.484375.046876.96875.070313 1.457031.070313h8.320313v153.695313c0 30.417968 24.75 55.164062 55.167969 55.164062h81.710937c8.285157 0 15-6.71875 15-15v-120.5c0-13.878906 11.292969-25.167969 25.171875-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.28125 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.164062v-153.695313h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.8125 18.359375-18.367187 18.367187-48.253906.027344-66.632813zm-21.242188 45.421876c-3.238281 3.238281-7.542969 5.023437-12.117187 5.023437h-22.71875c-8.285156 0-15 6.714844-15 15v168.695313c0 13.875-11.289063 25.164062-25.167969 25.164062h-66.710937v-105.5c0-30.417969-24.746094-55.167969-55.167969-55.167969h-48.195313c-30.421875 0-55.171875 24.75-55.171875 55.167969v105.5h-66.710937c-13.875 0-25.167969-11.289062-25.167969-25.164062v-168.695313c0-8.285156-6.714844-15-15-15h-22.328125c-.234375-.015625-.464844-.027344-.703125-.03125-4.46875-.078125-8.660156-1.851563-11.800781-4.996094-6.679688-6.679687-6.679688-17.550781 0-24.234375.003906 0 .003906-.003906.007812-.007812l.011719-.011719 208.847656-208.839844c3.234375-3.238281 7.535157-5.019531 12.113281-5.019531 4.574219 0 8.875 1.78125 12.113282 5.019531l208.800781 208.796875c.03125.03125.066406.0625.097656.09375 6.644531 6.691406 6.632813 17.539063-.03125 24.207032zm0 0" fill='#a8a8a8' />
+          <rect x="0" y="0" width="100%" height="100%" fill="none" /> 
+          </a>
+        </svg>
+
+        <!-------------->
+        <!--MOBILE NAV-->
+        <!-------------->
+        <button class="hamburger" aria-label="open the menu" aria-expanded="false" onclick="ariaToggle()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button> 
+        <nav>
+          <ul class="mobile-nav">
+            <li class="open"><a href="../index.html">Home</a></li>
+            <li class="open"><a href="../projects.html">Projects</a></li>
+            <li class="open"><a href="../contact.html">Contact Me</a></li>
+            <li class="open"><a href="../blog.html" class="is-open">Blog</a></li>
+            <li class="open"><a href="../photos.html">Tumblr Dump</a></li>
+          </ul>
+        </nav>
+
+        <div class="blog-header">
+          <img src="images/like-button-min.jpg" width="1334" height="890" class="blog-photo-big" alt="facebook like button"/>
+          <h2 class="post-title">
+            I'm <i>button</i> you'll find this helpful!
+          </h2>
+        <div class="author">
+          <img src="images/profile-pic-min.png" width="45" height="45" alt="picture of Derrick Holleman" class="profile-pic">
+          <div class="author-info">
+            <p class="name">
+              Derrick Holleman
+            </p>
+            <p class="date">
+              June 10th, 2021
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <section class="post-container">
+
+        <h2 class="section-title">
+          How should I style a button?
+        </h2>
+        <p class="main-text">
+          When I first tried seeking the answer to this question, I was surprised by the amount of answers I found.  I thought, "there must be a standard best practice for styling a button, right?" <a href="https://bitsofco.de/anchors-vs-buttons/" target="_blank">Wrong!</a>  Unfortunately there are a lot of ways to go about it and each of them has their downsides.
+        </p>
+        <br/>
+        <p class="main-text">
+          <span class="accent">I'll go over a few of the different ways to style a button.</span> First, we have styling an <code>a</code> tag to look and function like a <code>button</code> element and vice versa.  This technique works in terms of functionality, but is discouraged due to the fact that elements should only do what they are designed to do.  You shouldn't mix and match style and functionality.
+          <br />
+          <br />
+          Another common solution is wrapping an <code>a</code> tag around a <code>button</code> tag.
+          <br />
+          <img src="images/a-around-btn-min.png" class="code-example" width="680" height="319" alt="example of an a tag wrapping around a button">
+          <br /> 
+          This and the vice versa option of wrapping a <code>button</code> tag around an <code>a</code> tag are other ways that seem to work in terms of functionality, but are technically <a href="https://stackoverflow.com/questions/6393827/can-i-nest-a-button-element-inside-an-a-using-html5" target="_blank">incorrect</a> in terms of web standards.
+          <br />
+          <br />
+          <span class="accent">From what I gathered while reading around</span>, the most viable option seems to be using a Javascript <code>onclick</code> (or <code>onClick</code> if using React) function inside the button tag to go to the desired destination.
+          <br />
+          <img src="images/location-href-min.png" class="code-example" width="841" height="572" alt="example of using an onclick Javascript function to activate a button"> 
+          <br /> 
+          When it comes to accessibility, this Javascript option seemed to cover most of the bases.  There's always an exception of course and that exception is that this solution won't work for internet users who don't have Javascript enabled on their device or browser.  You can take a look at this <a href="https://deliberatedigital.com/blockmetry/javascript-disabled" target="_blank">article</a> and decide if that is worth it for you!
+        </p>
+        <p class="main-text last-paragraph">
+          <span class="accent">So.. yeah, lots of options.</span> In my opinion you should style your buttons how you're most comfortable, but at the same time be aware of all of the different ways to do it.  If the client/company you're working for has a way they like their buttons styled, or a certain audience they're wanting to look out for more than another, you'll be ready for any request! 
+        </p>
+
+        <h2 class="section-title">
+          Troubleshooting some common issues
+        </h2>
+        <p class="main-text">
+          If you're like me, you like wrapping your <code>a</code> tag in a <code>button</code>.  But, this can create a couple different problems.  The first problem is that both the <code>button</code> and <code>a</code> tags will be focusable.  To force a focus event to only happen once on your button instead of twice, put <code>tabindex="1"</code> on your <code>button</code> element.
+          <br />
+          <img src="images/tabindex-min.png" class="code-example" width="576" height="194" alt="example showing tabindex being used on a button element">
+          <br />
+          <span class="accent">Why won't the :focus state work?</span>  It definitely isn't immediately obvious, but in order to make your <code>:focus</code> state work when nesting an <code>a</code> tag (in any element, not just a button- example: <code>svg</code>), you need to change <code>:focus</code> to <code>:focus-within</code>.
+          <br />
+          <br />
+          <span class="accent">How can I make the entire button clickable?</span> This is a common issue I notice on many sites where people are nesting their <code>a</code> tags within <code>button</code> tags.  Only the text or image inside the button is clickable and not the surrounding button surface area.  This can create a user experience (UX) problem when users need to aim with their mouse (or even more annoying, tap with their finger) directly on text or an image in order to activate the button.
+          <br />
+          <img src="images/a-tag-incorrect-min.png" class="code-example" width="250" height="98" alt="example showing an incorrectly styled a tag nested in a button">
+          <br />
+          In the example above, you can see by the background color on the text that the clickable area only takes up the width and height of the text.  Below, I'll show you the difference in surface area coverage when the nested <code>a</code> tag is properly styled to fit the button. 
+          <br />
+          <img src="images/a-tag-correct-min.png" class="code-example" width="254" height="113" alt="example showing a correctly styled a tag nested in a button"> 
+          <br />
+          As you can see the clickable area is much larger, even spilling out of the corners of the button a little.  Leaving no question that when the user clicks the button, they'll click the link!  Code and further explanation below.
+          <br />
+          <img src="images/a-tag-code-min.png" class="code-example" width="718" height="867" alt="code for the example above">
+        </p>
+        <p class="main-text last-paragraph">
+          <span class="accent">So what's going on in the code?</span> The <code>//html</code> section is just putting the basic <code>button</code> and nested <code>a</code> link onto the page.  Now going into the <code>//css</code> section, we need to globally reset any browser default <code>margin</code> and <code>padding</code> and we do this with the asterisk, <code>*</code> property.  Then, the <code>button</code> styling is just your average button styles, nothing fancy there.  
+          <br />
+          <br />
+          The styling for the <code>a</code> tag is where the magic happens.
+          <br />
+          <br />
+          We need to first set the <code>a</code> element to <code>display: block</code> in order for the <code>height</code> and <code>width</code> of the element to be edited.  <code>Text-decoration: none</code> and <code>color: inherit</code> are resets so that the <code>a</code> element doesn't look how it does in its default state.  <code>Background-color</code> is solely for the visual example (don't add that in your code) and <code>font-size</code> can be whatever works for your website layout.  So the biggest difference here is that instead of using <code>padding</code> to determine our button's width and height, we are instead going to be changing the <code>width</code> and <code>height</code> on the <code>a</code> element to determine the size of the button.  
+          <br />
+          <br />
+          The final piece of the puzzle is that the value of <code>line-height</code> must be equal to the value of <code>height</code> in order for the text or image within the button to be centered.  That's that, a fully clickable button with an <code>a</code> element nested inside!
+        </p>
+
+        <h2 class="section-title">
+          Applying subtle box shadow to buttons
+        </h2>
+
+        <p class="main-text">
+          Look closely, can you spot the difference between these two buttons?
+          <br />
+          <img src="images/box-shadow-example-min.png" class="code-example" width="408" height="73" alt="example showing one button with box shadow and one without">
+          <br />
+          I'm sure you can, but that's because they're placed side by side with not a lot else to look at surrounding them.  When you're designing a button from scratch on your webpage you probably wouldn't be thinking about this difference and that's why the benefit of adding a little box shadow onto your buttons is often overlooked!
+          <br />
+          <br />
+          <span class="accent">The button on the left has character</span>, appears 3-D- seemingly asking to be clicked and in my opinion, is generally more satisfying to look at.  Overall, the button on the left has a much better appearance than the one on the right. Now, the button on the right is by no means a <em>bad</em> button design, it just looks fairly bland when matched up to the button on the left.
+          <br />
+          <br />
+          So, how can you achieve this box-shadow styling on your own buttons?  It's easy!  Let me show you with the code below.
+          <br />
+          <img src="images/button-box-shadow-code-min.png" class="code-example" width="760" height="636" alt="code to go with the above box shadow example">
+        </p>
+        <p class="main-text last-paragraph">
+          In this code the <code>//html</code> section is just a basic <code>button</code> element with text inside.  Everything in the <code>//css</code> section can be up to you, except for the <code>box-shadow</code> property.  But note, the <code>box-shadow</code> does depend on your <code>background-color</code>.  What I mean by this is that whatever your <code>background-color</code> is, your <code>box-shadow</code> color should simply just be a darker shade of the <code>background-color</code>.  Luckily it's very easy nowadays to experiment with different color combinations quickly.  Try out some different shades and see what looks good!  The values 0, 3px and rgb in the <code>box-shadow</code> stand for- 0px offset to the right and left, 3px offset downwards and rgb is the color of the shadow.
+        </p>
+
+        <h2 class="section-title">
+          If you aren't taking notes, this is the time to start.
+        </h2>
+
+        <p class="main-text">
+          This blog post went in depth into a lot of specifics regarding buttons and button styling.  It can be a lot to take in all at once.  But, in an effort to not overwhelm, in this section I'll list out the most important things you should take away from this blog post.  
+          <br />
+          <br />
+          <span class="accent">The following points are good habits</span> to get into when styling every button you make regardless of the situation.
+        </p>
+          <div class="important-points">
+            <div>
+              If nothing else, always add a <code>:hover</code> state to your buttons.  Preferably also add <code>:active</code> for phones and <code>:focus</code> for keyboards, but definitely <code>:hover</code> for desktops.  People often take for granted how satisfying a <code>:hover</code> state is until it's not there!
+            </div>
+            <div>
+              Make sure your button styling is consistent throughout your site.  This means fonts, text color, background-color, border sizes and colors, border radius', padding, :hover states etc.  It should all look uniform.  I'd say two different button stylings at max throughout your site (as long as they have a different function, like a submit button), but definitely not more than one different styling on the same page.  Buttons are a big part of the identity of your site, just the same as having a consistent font.  
+            </div>
+            <div>
+              Always include the <code>cursor: pointer</code> property and value in your button's CSS.  Having the cursor change is an easy, subtle and a basically universal way to indicate to the user that they're on a clickable element.  If you forget to add a <code>:hover</code> state, then <code>cursor: pointer</code> will be a life saver.
+            </div>
+            <div>
+              If you decide to use an image or a symbol as a button, which can definitely be a cool change up from the traditional button, be sure to follow the accessibility guidelines regarding this.
+              This includes adding <code>aria-label="insert text here"</code> if the content is wrapped in a <code>button</code> tag.  Otherwise add both <code>role="button"</code> and <code>aria-label="insert text here"</code> inside the <code>img</code> tag.  <code>role="button"</code> allows screen readers to recognize a non <code>button</code> tag as a <code>button</code> tag and treat it as such and <code>aria-label="insert text here"</code> allows the image you chose to be translated into readable text for the screen reader.
+            </div>
+          </div>
+
+      </section>
+
+
+      <footer>
+        <ul class="nav-ul">
+          <li class="item-to-underline"><a href="../projects.html" class="hover-text-from-middle"><span aria-hidden="true">⚙️</span> Projects</a></li>
+          <li class="item-to-underline"><a href="../contact.html" class="hover-text-from-middle"><span aria-hidden="true">📮</span> Contact Me</a></li>
+          <li>
+            <a href="../cat.html" target="_blank">
+              <img src="../images/heart.svg" width="75" height="75" class="heart" alt="heart icon" aria-label="click on the heart to see a cat picture">
+            </a>
+          </li>
+          <li class="item-to-underline"><a href="../blog.html" class="hover-text-from-middle is-open"><span aria-hidden="true">🖍️</span> Blog</a></li>
+          <li class="item-to-underline"><a href="../photos.html" class="hover-text-from-middle"><span aria-hidden="true">🖼️</span> Tumblr Dump</a></li>
+        </ul>
+
+          <ul class="footer-mobile-nav">
+            <li><a href="../projects.html">⚙️ Projects</a></li>
+            <li><a href="../contact.html">📮 Contact Me</a></li>
+            <li><a href="../blog.html" class="is-open">🖍️ Blog</a></li>
+            <li><a href="../photos.html">🖼️ Tumblr Dump</a></li>
+          </ul>
+
+    <p class="copyright">
+      &copy 2022 Derrick Holleman.  All Rights Reserved.
+      <svg class="home-bottom" height="50px" viewBox="0 1 511 511.999" width="50px" xmlns="http://www.w3.org/2000/svg" aria-label="Home" role="button">
+        <a href="../index.html" cursor="pointer" pointer-events="all">
+        <path fill="#00ffffb3" d="m498.699219 222.695312c-.015625-.011718-.027344-.027343-.039063-.039062l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.808594-33.328126-13.808594-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.144532.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.441406 13.234375 31.273437 13.746093.484375.046876.96875.070313 1.457031.070313h8.320313v153.695313c0 30.417968 24.75 55.164062 55.167969 55.164062h81.710937c8.285157 0 15-6.71875 15-15v-120.5c0-13.878906 11.292969-25.167969 25.171875-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.28125 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.164062v-153.695313h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.8125 18.359375-18.367187 18.367187-48.253906.027344-66.632813zm-21.242188 45.421876c-3.238281 3.238281-7.542969 5.023437-12.117187 5.023437h-22.71875c-8.285156 0-15 6.714844-15 15v168.695313c0 13.875-11.289063 25.164062-25.167969 25.164062h-66.710937v-105.5c0-30.417969-24.746094-55.167969-55.167969-55.167969h-48.195313c-30.421875 0-55.171875 24.75-55.171875 55.167969v105.5h-66.710937c-13.875 0-25.167969-11.289062-25.167969-25.164062v-168.695313c0-8.285156-6.714844-15-15-15h-22.328125c-.234375-.015625-.464844-.027344-.703125-.03125-4.46875-.078125-8.660156-1.851563-11.800781-4.996094-6.679688-6.679687-6.679688-17.550781 0-24.234375.003906 0 .003906-.003906.007812-.007812l.011719-.011719 208.847656-208.839844c3.234375-3.238281 7.535157-5.019531 12.113281-5.019531 4.574219 0 8.875 1.78125 12.113282 5.019531l208.800781 208.796875c.03125.03125.066406.0625.097656.09375 6.644531 6.691406 6.632813 17.539063-.03125 24.207032zm0 0" fill='#c55050' />
+        <rect x="0" y="0" width="100%" height="100%" fill="none" /> 
+        </a>
+      </svg>
+    </p>
+  </footer>
+
+  </div>
+  <script src="js/hamburger.js"></script>
+</body>
+</html>

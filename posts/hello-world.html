@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name='description' content="Blog post about my beginnings and entry to the coding world.  From my schooling at McNally Smith, to my life as a musician, and then to my love of web design">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="console.log('Hello World!').  Get to know me!">
+  <meta property="og:image" content="https://derrickhollemandev.netlify.app/images/frog-guitar-min.jpg"/>
+  <meta property="og:description" content="Hi, I'm Derrick.  A web developer with an appreciation for front end design.">
+  <!--favicon link-->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+  <!-- For external style sheets -->
+  <link rel="stylesheet" type="text/css" href="css/hello-world.css">
+  <link rel="stylesheet" type="text/css" href="css/hamburger-animation.css">
+  <!--jQuery import link-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- For custom fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Font awesome stuff -->
+  <!-- <link href="fontawesome/css/all.css" rel="stylesheet">
+  <script src="https://use.fontawesome.com/b96c1e7f03.js"></script> -->
+  <title>"Hello World!"</title>
+  <style>
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0%;
+    padding: 0%;
+  }
+  html {
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* full screen background works for all sizes of screens */
+    background: linear-gradient(to right, 
+    rgba(23, 22, 22, .98), 
+    rgba(23, 22, 22, .98)), url(images/stars-min.jpg) no-repeat center center fixed;
+    background-size: cover;
+    /* ------------------- */
+  }
+  body {
+    width: 1920px;
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 100%;
+    /* font-family: 'Open Sans', sans-serif; 300 400 600 */
+    /* font-family: 'Roboto', sans-serif; 300 400 500 700 */
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+    /* background-color: rgb(23, 22, 22); */
+    transition: .1s; /* transition back into light mode */
+    position: relative;
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    color: #00ffffb3;
+  }
+  .main-text a:hover {
+    color: #c55050;
+  }
+  ul li::marker {
+    display: none;
+  }
+  ul, li {
+    list-style: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    color: rgb(168, 168, 168)
+  }
+  
+</style>
+</head>
+
+<body>
+  <div class="page-container">
+
+      <header>
+        <div class="go-back-top" role="button" aria-label="go back to blog page">
+          <a href="../blog.html">
+            <img src="images/left-chevron.svg" class='arrow-left'>
+            Back to Blog page
+          </a>
+        </div>
+        <svg class="home-top" height="50px" viewBox="0 1 511 511.999" width="50px" xmlns="http://www.w3.org/2000/svg" aria-label="Home" role="button">
+          <a href="../index.html" cursor="pointer" pointer-events="all">
+          <path fill="#00ffffb3" d="m498.699219 222.695312c-.015625-.011718-.027344-.027343-.039063-.039062l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.808594-33.328126-13.808594-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.144532.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.441406 13.234375 31.273437 13.746093.484375.046876.96875.070313 1.457031.070313h8.320313v153.695313c0 30.417968 24.75 55.164062 55.167969 55.164062h81.710937c8.285157 0 15-6.71875 15-15v-120.5c0-13.878906 11.292969-25.167969 25.171875-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.28125 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.164062v-153.695313h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.8125 18.359375-18.367187 18.367187-48.253906.027344-66.632813zm-21.242188 45.421876c-3.238281 3.238281-7.542969 5.023437-12.117187 5.023437h-22.71875c-8.285156 0-15 6.714844-15 15v168.695313c0 13.875-11.289063 25.164062-25.167969 25.164062h-66.710937v-105.5c0-30.417969-24.746094-55.167969-55.167969-55.167969h-48.195313c-30.421875 0-55.171875 24.75-55.171875 55.167969v105.5h-66.710937c-13.875 0-25.167969-11.289062-25.167969-25.164062v-168.695313c0-8.285156-6.714844-15-15-15h-22.328125c-.234375-.015625-.464844-.027344-.703125-.03125-4.46875-.078125-8.660156-1.851563-11.800781-4.996094-6.679688-6.679687-6.679688-17.550781 0-24.234375.003906 0 .003906-.003906.007812-.007812l.011719-.011719 208.847656-208.839844c3.234375-3.238281 7.535157-5.019531 12.113281-5.019531 4.574219 0 8.875 1.78125 12.113282 5.019531l208.800781 208.796875c.03125.03125.066406.0625.097656.09375 6.644531 6.691406 6.632813 17.539063-.03125 24.207032zm0 0" fill='#a8a8a8' />
+          <rect x="0" y="0" width="100%" height="100%" fill="none" /> 
+          </a>
+        </svg>
+
+        <!-------------->
+        <!--MOBILE NAV-->
+        <!-------------->
+        <button class="hamburger" aria-label="open the menu" aria-expanded="false" onclick="ariaToggle()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button> 
+        <nav>
+        <ul class="mobile-nav">
+          <li class="open"><a href="../index.html">Home</a></li>
+          <li class="open"><a href="../projects.html">Projects</a></li>
+          <li class="open"><a href="../contact.html">Contact Me</a></li>
+          <li class="open"><a href="../blog.html" class="is-open">Blog</a></li>
+          <li class="open"><a href="../photos.html">Tumblr Dump</a></li>
+        </ul>
+      </nav>
+
+        <div class="blog-header">
+          <img src="images/frog-guitar-min.jpg" width="1334" height="890" class="blog-photo-big" alt="guitar laying against a rock"/>
+          <h2 class="post-title">
+            <!--adding a span with space allows for text wrapping on mobile-->
+            console.log<span class="space"> </span>("Hello World!");
+          </h2>
+        <div class="author">
+          <img src="images/profile-pic-min.png" width="45" height="45" alt="picture of Derrick Holleman" class="profile-pic">
+          <div class="author-info">
+            <p class="name">
+              Derrick Holleman
+            </p>
+            <p class="date">
+              May 20th, 2021
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <section class="post-container">
+
+        <h2 class="section-title">
+          From The Beginning
+        </h2>
+        <p class="main-text">
+          Allow me to reintroduce myself with a full introduction- my name is Derrick Holleman, I'm 25 years old and reside in Minneapolis, MN.  I've played guitar since 8th grade and have been a full time musician for the past 2 years.  I've really only had an interest in coding since December of 2020, but more on that later.
+        </p>
+        <br/>
+        <p class="main-text last-paragraph">
+          <span class="accent">It all started with the video game, Guitar Hero.</span>
+          Yes, what was to become my passion for the next 10 years and my full time job for 2 of those all started with a video game.  But, everyone's journey starts out differently and mine was brought on by what is some parents worst nightmare - a child who plays video games from morning to night and barely goes outside.  
+          <br/>
+          <br/> 
+          My obsession with Guitar Hero soon led to me getting my first electric guitar from a cousin of mine.  A year after I got my first guitar I joined my high school's jazz band and played on stage in front of people for the first time.  I was a pretty shy kid, so I thought playing on stage would not be for me, but instead I learned playing guitar for an audience turned out to be the only time I actually liked being the center of attention.
+        </p>
+
+        <h2 class="section-title">
+          McNally Smith College of Music
+        </h2>
+        <p class="main-text">
+          Fortunately, in 2015 I was able to follow my passion and go to college for guitar performance where I would meet a lot of connections to get me more confident and focused on my path into the music world.  Unfortunately, my passion was a liberal art and as a lot of people who went to college for a liberal art can relate to, probably not the best decision in hindsight.  But at the time, I couldn't imagine going to college for anything else.  As I would find out in 4 long years, my college experience wouldn't turn out as planned. 
+        </p>
+        <br/>
+        <p class="main-text">
+          <span class="accent">My college suddenly closed before I graduated.</span>
+          To be exact, it closed one semester before I was supposed to graduate in the spring.  We first got notice of the closure during <i>finals week</i> of the winter semester.  Everyone already had their classes for spring planned out with counselors, seniors looking forward to graduation, the college even continued to send out acceptance letters.  McNally Smith leadership was simply hiding the fact it was running out of money until the last cent, and when they couldn't hide it anymore, they pulled the rug out from under everyone.  Everyone had to be out of the dorms in one weeks time.  This included students who attended the college from different states and countries.  It was a whole mess that you can read about more <a href="https://www.npr.org/sections/thetwo-way/2017/12/19/571997969/minnesota-music-college-closes-abruptly-and-students-scramble-to-find-schools" target="_blank">here</a> if you are interested.  
+        </p>
+        <br/>
+        <p class="main-text last-paragraph">
+          I was one of the lucky ones who lived in the state of Minnesota where the college was located, so my scramble to find a new school before spring semester was definitely hectic, but not as detrimental to my education timeline as it could've been.  
+          <br/>
+          <br/>
+          I ended up settling on a school named Augsburg University which is located about 15 minutes away from McNally Smith.  McNally Smith focused more on contemporary music, whereas Augsburg specialized in classical music so the change was not easy to get used to.  I ended up doing the absolute miniumum in order to graduate just so I could be done with my music degree.  The transfer to Augsburg added 1 and a half years onto my education, so I was tired of school to say the least.  But, with degree in hand 5 years after I was accepted into college, I set off to make my mark on the music world.
+        </p>
+
+        <h2 class="section-title">
+          My Friend Oatmeal?
+        </h2>
+        <p class="main-text">
+          My Friend Oatmeal.  It's the name of my solo music project, where I write and record all the songs by myself.  Nobody knows what the name means when they first hear it, but to me this name has a personal meaning.  I'm not going to get into the meaning here because I don't really focus on that music project anymore, but my My Friend Oatmeal project was about 2 years of writing music that I was very proud of.  It didn't catch a lot of traction outside of my friend group as is the story for most local musicians, but I got enjoyment out of creating something that I thought sounded good.  If you want to hear for yourself, you can check out my music on 
+          <a href="https://www.youtube.com/channel/UCdVL7KUnYjvHXFG9wZYNnrg" target="_blank">Youtube</a> and <a href="https://open.spotify.com/artist/5iWsYiO66RyOUgE0zv0SBm" target="_blank">Spotify</a>!  
+        </p>
+        <br/>
+        <p class="main-text last-paragraph">
+          <span class="accent">Nowadays I mainly play in cover bands and at church on Sundays.</span>  The cover band market in Minneapolis is as solid as it gets, assuming you don't mind playing the same songs over and over again.  If you get lucky enough to meet and then earn a good reputation amongst a well-connected circle of musicians, you can have steady gigs year round.  I've enjoyed a fair amount of success in the music industry here ever since about early 2019.  
+          <br/>
+          <br/>
+          After I met NBC's the Voice finalist, Ashley Dubose, and then played guitar for her at a <a href="https://www.sofarsounds.com/" target="_blank">Sofar Sounds</a> gig, I steadily grew my circle of connections to the point where I could make music my full time job.  But, continuing with the theme from my college experience, things didn't go as planned.  Just as I was getting going in the Minneapolis music scene and starting to get used to my new full time job that I'd carved out from nothing, the worst case scenario that nobody saw coming happened...
+        </p>
+
+        <h2 class="section-title">
+          My experience during the COVID-19 pandemic
+        </h2>
+        <p class="main-text">
+          Yeah, that happened.
+        </p>
+        <br/>
+        <p class="main-text">
+          <span class="accent">All of my gigs were gone almost overnight.</span> I remember reading some news stories about COVID in Wuhan, China and then how it was spreading throughout the rest of China, but I had assumed it was going to be another one of those foreign diseases that stays a foreign disease.  I was at a recording session one night and I vividly recall one of the musicians talking about how sports games were needing to be cancelled because of the players catching COVID and I think that was the first time I felt like the spreading of the virus could actually start to affect me and my livelihood.  Not too long after that, a popular weekly open mic I was part of was cancelled due to safety concerns related to the spreading virus.  Before I knew it, gigs one month out were being cancelled and then gigs two months out and suddenly my whole calendar for 2020 was empty.
+          </p>
+          <br/>
+          <p class="main-text">
+            Seeing how quickly my music calendar cleared out and then noticing how long it was taking for things to go back to normal made me realize that music was a very fragile way of living.  I had realized this before because even in normal circumstances gigs are not always guaranteed, but in emergency situations, entertainment is the first thing to go.
+          </p>
+          <br/>
+          <p class="main-text last-paragraph">
+            <span class="accent">I spent the last half of 2020 basically doing nothing.</span> Nothing except for playing video games and watching video games on <a href="https://www.twitch.tv/" target="_blank">Twitch.tv</a>.  This half a year centered around video games unexpectedly led me to my interest in coding.  Specifically what led me to my interest is a streamer named Giant Waffle.  He is a video game streamer on Twitch who, like me, has an interest in Science and Technology. He often talks about these topics with his chat on stream while playing video games.  One day he mentioned how one of his cousins picked up a coding book without a prior interest in coding and in about 6 months his cousin landed a developer job in the early days of Tumblr.  
+            <br/>
+            <br/>
+            I had never really thought about anything coding related before this point, never understood how any of it worked.  But, the way Giant Waffle was talking about it, he made it seem easy.  I know now that coding is definitely not easy!  It's only for you if you have the motivation to learn a lot in a short time, but I'm glad I was under the impression coding was easy when I first started or I probably wouldn't have started at all.  
+            <br/>
+            <br/>
+            And so, a worst case scenario opened a new door, to new opportunities and then maybe to a new life where I don't have to rely on the unstable world of music or a minumum wage job to make a living.
+          </p>
+
+          <h2 class="section-title">
+            The adventure begins!
+          </h2>
+          <p class="main-text">
+            It's now December 2020 and while researching coding languages to learn first, I noticed the common consensus seemed to be that Python is an in demand coding language, that's also fairly easy to read and write.  Basically it's the closest to writing English sentences compared to any other coding language.  So I decided on Python to be my introduction to the coding world.  After about a month and a half of learning Python and doing coding challenges, I wanted to move on to a different topic to maximize my knowledge and not just tunnel vision on one thing.  
+            <br/>
+            <br/>
+            The next languages I wanted to learn were HTML and CSS because I vaguely remembered learning those in high school and so I assumed they would be easy to learn again.  Luckily I was right and I've enjoyed working with HTML and CSS for a couple months now practicing recreating website templates and then building up to making my own website which you are reading from right now!  
+            <br/>
+            <br/>
+            As web designers and developers know, if you use HTML and CSS, you'll inevitably use Javascript.  As I'm writing this right now in May of 2021, I don't have a full understanding or grasp on Javascript yet, but I plan to learn more in depth Javascript as the next topic I focus on.  For now, I know enough Javascript to copy and paste code from Stack Overflow and change some values and variables to make it work with my own project.  
+          </p>
+          <br/>
+          <p class="main-text last-paragraph">
+            <span class="accent">The next step for me will be</span> going to a coding bootcamp in the fall of 2021.  I plan on attending <a href="https://www.thinkful.com/" target="_blank">Thinkful</a>, assuming I pass the entrance interview/exam and get accepted.  If not, my back up plan is to attend a local coding bootcamp held at the University of Minnesota.  The step after completing the bootcamp is what I assume to be the hardest part.  Finding that first job.  
+            <br/>
+            <br/>
+            I'm hoping the assistance from career specialists at the bootcamp, combined with my portfolio projects will be enough to help land me a job post-bootcamp.  That of course would be things going as planned, which definitely has not been the theme so far, but I hope that at least working hard and staying dedicated will pay off in this instance!
+          </p>
+
+        </section>
+
+        <footer>
+          <ul class="nav-ul">
+            <li class="item-to-underline"><a href="../projects.html" class="hover-text-from-middle"><span aria-hidden="true">⚙️</span> Projects</a></li>
+            <li class="item-to-underline"><a href="../contact.html" class="hover-text-from-middle"><span aria-hidden="true">📮</span> Contact Me</a></li>
+            <li>
+              <a href="../cat.html" target="_blank">
+                <img src="../images/heart.svg" width="75" height="75" class="heart" alt="heart icon" aria-label="click on the heart to see a cat picture">
+              </a>
+            </li>
+            <li class="item-to-underline"><a href="../blog.html" class="hover-text-from-middle is-open"><span aria-hidden="true">🖍️</span> Blog</a></li>
+            <li class="item-to-underline"><a href="../photos.html" class="hover-text-from-middle"><span aria-hidden="true">🖼️</span> Tumblr Dump</a></li>
+          </ul>
+          
+          <ul class="footer-mobile-nav">
+            <li><a href="../projects.html">⚙️ Projects</a></li>
+            <li><a href="../contact.html">📮 Contact Me</a></li>
+            <li><a href="../blog.html" class="is-open">🖍️ Blog</a></li>
+            <li><a href="../photos.html">🖼️ Tumblr Dump</a></li>
+          </ul>
+
+        <p class="copyright">
+          &copy 2022 Derrick Holleman.  All Rights Reserved.
+          <svg class="home-bottom" height="50px" viewBox="0 1 511 511.999" width="50px" xmlns="http://www.w3.org/2000/svg" aria-label="Home" role="button">
+            <a href="../index.html" cursor="pointer" pointer-events="all">
+            <path fill="#00ffffb3" d="m498.699219 222.695312c-.015625-.011718-.027344-.027343-.039063-.039062l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.808594-33.328126-13.808594-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.144532.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.441406 13.234375 31.273437 13.746093.484375.046876.96875.070313 1.457031.070313h8.320313v153.695313c0 30.417968 24.75 55.164062 55.167969 55.164062h81.710937c8.285157 0 15-6.71875 15-15v-120.5c0-13.878906 11.292969-25.167969 25.171875-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.28125 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.164062v-153.695313h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.8125 18.359375-18.367187 18.367187-48.253906.027344-66.632813zm-21.242188 45.421876c-3.238281 3.238281-7.542969 5.023437-12.117187 5.023437h-22.71875c-8.285156 0-15 6.714844-15 15v168.695313c0 13.875-11.289063 25.164062-25.167969 25.164062h-66.710937v-105.5c0-30.417969-24.746094-55.167969-55.167969-55.167969h-48.195313c-30.421875 0-55.171875 24.75-55.171875 55.167969v105.5h-66.710937c-13.875 0-25.167969-11.289062-25.167969-25.164062v-168.695313c0-8.285156-6.714844-15-15-15h-22.328125c-.234375-.015625-.464844-.027344-.703125-.03125-4.46875-.078125-8.660156-1.851563-11.800781-4.996094-6.679688-6.679687-6.679688-17.550781 0-24.234375.003906 0 .003906-.003906.007812-.007812l.011719-.011719 208.847656-208.839844c3.234375-3.238281 7.535157-5.019531 12.113281-5.019531 4.574219 0 8.875 1.78125 12.113282 5.019531l208.800781 208.796875c.03125.03125.066406.0625.097656.09375 6.644531 6.691406 6.632813 17.539063-.03125 24.207032zm0 0" fill='#c55050' />
+            <rect x="0" y="0" width="100%" height="100%" fill="none" /> 
+            </a>
+          </svg>
+        </p>
+      </footer>
+
+  </div>
+  <script src="js/hamburger.js"></script>
+</body>
+</html>

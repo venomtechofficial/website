@@ -1,0 +1,203 @@
+@media screen and (max-width: 275px) {
+    .title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .section-container {
+        margin: 0rem auto 4rem auto;
+    }
+    .project-description {
+        line-height: 1.8 !important;
+    }
+}
+/* directions dont fade in on desktop/tablet */
+@media screen and (min-width: 769px) {
+    .directions {
+        animation: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* no titles animation on mobile */
+    [data-aos] {
+        transform: none !important;
+        opacity: 1 !important;
+    }
+    body {
+        background: rgb(23, 22, 22) !important;
+    }
+    .header-container {
+        margin: 5rem auto 0rem auto
+    }
+    .home-top {
+        display: none;
+    }  
+    .nav-ul-top {
+        display: none;
+    } 
+
+    .hamburger {
+        display: block;
+        z-index: 10000;
+        position: absolute;
+        left: 50%;
+        margin-left: -26.5px;
+        top: -2.5rem;
+        background: none;
+        outline: none;
+        border: none;
+    }
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0;
+        opacity: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background-color: rgb(0, 0, 0);
+        padding-top: 5rem;
+        transition: .4s ease-in-out;
+        color: #c55050;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1.7rem;
+    }
+    .mobile-nav.is-active {
+        left: 0;
+        opacity: 1;
+    }
+
+    .mobile-nav li a:hover, 
+    .mobile-nav li a:focus, 
+    .mobile-nav li a:active {
+        color: #df7171;
+    }
+    .mobile-nav li a.is-open {
+        color: #00ffffb3;
+      }
+    /* mobile nav fade in animation START */
+        .mobile-nav.is-active li { 
+        opacity: 0; /* elements fade in from being invisible */
+       }
+       .mobile-nav.is-active li.open {
+        animation-name: fadeIn;
+        animation-fill-mode: forwards;
+        animation-duration: .5s; /* time between start and end of animation */
+        animation-delay: .15s; /* time before animation kicks in */
+        animation-timing-function: ease-in-out;
+       }
+       .mobile-nav.is-active li.open:nth-child(2) {
+        animation-delay: .25s;
+       }
+       .mobile-nav.is-active li.open:nth-child(3) {
+        animation-delay: .4s;
+       }
+       .mobile-nav.is-active li.open:nth-child(4) {
+        animation-delay: .6s;
+       }
+       .mobile-nav.is-active li.open:nth-child(5) {
+        animation-delay: .7s;
+       }
+       @keyframes fadeIn {
+        0% {
+         transform: translateX(75px); /* placement when animation begins */
+         opacity: 0;
+        }
+        100% {
+         transform: translateX(0); /* placement when animation ends */
+         opacity: 1;
+        }
+       }
+       /* mobile nav fade in animation END */ 
+    .directions {
+        width: 75%;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+        animation: TranslateMobile 2s ease-in-out .9s;
+        font-size: 1.3rem;
+    }
+    .project-section {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0rem;
+        margin-bottom: 0rem;
+    }
+    .fadein-right {
+        position: relative;
+        right: -800px;
+        opacity: 0;
+    }
+    .fadein-left {
+        position: relative;
+        left: -800px;
+        opacity: 0;
+    }
+    .project {
+        margin: 5rem 1.5rem;
+    }
+    .project-title {
+        font-size: clamp(2.2rem, 7vw, 3rem);
+        width: 100%;
+        margin: 0 auto 1rem auto;
+    }
+    .project-title::after {
+       width: 100%;
+      }
+    .project-description {
+        width: 100%;
+        margin: 0 auto;
+        color: rgb(168, 168, 168);
+        line-height: 1.5;
+    }
+    .home-bottom {
+        margin-left: -20px;
+    }
+    footer .nav-ul {
+        display: none;
+    }
+    footer .footer-mobile-nav {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    footer .footer-mobile-nav li a {
+        color: rgb(148, 148, 148);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: clamp(1.2rem, 2vw, 1.7rem);
+    }
+    footer .footer-mobile-nav li a:hover, 
+    footer .footer-mobile-nav li a:focus, 
+    footer .footer-mobile-nav li a:active {
+        color: #c55050;
+    }
+    footer .copyright {
+        margin-top: 4rem;
+    }
+    footer {
+        margin-top: -2rem;
+    }
+}
+
+@media screen and (min-width: 490px) and (max-width: 1475px) {
+    .project-section {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    ul li {
+        font-size: 1.75rem;
+    }
+    .nav-ul li a {
+        font-size: 1.75rem !important;
+    }
+}

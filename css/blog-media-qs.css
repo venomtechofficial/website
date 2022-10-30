@@ -1,0 +1,199 @@
+@media screen and (max-width: 481px) {
+    .post-p {
+        line-height: 1.8 !important;
+    }
+}
+@media screen and (min-width: 492px) {
+    .space {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 583px) {
+    .social-icons {
+        width: 65% !important;
+    }
+    .title {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 727px) {
+    .title {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        width: 95%;
+        margin: 2rem auto 1rem auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        background: rgb(23, 22, 22) !important;
+    }
+
+    .home-top {
+        display: none;
+    } 
+    .nav-ul-top {
+        display: none;
+    } 
+    header {
+        margin: 5rem auto 6.5rem auto !important;
+      }
+    header .hamburger {
+        display: block;
+        z-index: 10000;
+        position: absolute;
+        left: 50%;
+        margin-left: -22px;
+        top: -3rem;
+        background: none;
+        outline: none;
+        border: none;
+    }
+    header .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0;
+        opacity: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background-color: rgb(0, 0, 0);
+        padding-top: 5rem;
+        transition: .4s ease-in-out;
+        color: #c55050;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1.7rem;
+    }
+    .mobile-nav.is-active {
+        left: 0;
+        opacity: 1;
+    }
+
+    .mobile-nav li:hover, 
+    .mobile-nav li:focus, 
+    .mobile-nav li:active {
+        color: #df7171;
+    }
+    .mobile-nav li a.is-open {
+        color: #00ffffb3;
+      }
+    /* mobile nav fade in animation START */
+        .mobile-nav.is-active li { 
+        opacity: 0; /* elements fade in from being invisible */
+       }
+       .mobile-nav.is-active li.open {
+        animation-name: fadeIn;
+        animation-fill-mode: forwards;
+        animation-duration: .5s; /* time between start and end of animation */
+        animation-delay: .15s; /* time before animation kicks in */
+        animation-timing-function: ease-in-out;
+       }
+       .mobile-nav.is-active li.open:nth-child(2) {
+        animation-delay: .25s;
+       }
+       .mobile-nav.is-active li.open:nth-child(3) {
+        animation-delay: .4s;
+       }
+       .mobile-nav.is-active li.open:nth-child(4) {
+        animation-delay: .6s;
+       }
+       .mobile-nav.is-active li.open:nth-child(5) {
+        animation-delay: .7s;
+       }
+       @keyframes fadeIn {
+        0% {
+         transform: translateX(75px); /* placement when animation begins */
+         opacity: 0;
+        }
+        100% {
+         transform: translateX(0); /* placement when animation ends */
+         opacity: 1;
+        }
+       }
+       /* mobile nav fade in animation END */
+    .container {
+        margin: -1rem auto 3rem auto !important;
+    }
+    section .header-post {
+        margin-bottom: 6rem;
+    }
+    .post-title {
+        text-align: left;
+    }
+    section .blog-photo {
+        height: 250px;
+    }
+    section .post-p {
+        width: 97%;
+        text-align: left;
+        line-height: 1.5;
+    }
+    section .author {
+        width: 97%;
+    }
+    .blog-btn {
+        box-shadow: 0px 4px 4px rgba(95, 88, 88, 0.4);
+    }
+    .blog-btn a {
+        text-decoration: none;
+        display: block; /* display block allows height and width to be edited */
+        color: inherit;
+        height: 3.7rem !important; /* specifying height/width makes whole button clickable */
+        width: 8.7rem !important;
+        line-height: 3.7rem !important;
+        font-size: 1.1rem !important;
+      }
+    footer .nav-ul {
+        display: none;
+    }
+    footer .footer-mobile-nav {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    footer .footer-mobile-nav li a {
+        color: rgb(148, 148, 148);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: clamp(1.2rem, 2vw, 1.7rem);
+    }
+    footer .footer-mobile-nav li a:hover, 
+    footer .footer-mobile-nav li a:focus, 
+    footer .footer-mobile-nav li a:active {
+        color: #c55050;
+    }
+    footer .copyright {
+        margin-top: 4rem;
+    }
+    footer .home-bottom {
+        margin-left: -20px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .blog-header .blog-photo-big, .blog-header .blog-photo-small {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .post-p {
+        font-size: 1.6rem !important;
+    }
+    ul li {
+        font-size: 1.75rem;
+    }
+    .nav-ul li a {
+        font-size: 1.75rem !important;
+    }
+}
